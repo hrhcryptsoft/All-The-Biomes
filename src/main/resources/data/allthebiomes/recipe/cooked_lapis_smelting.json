@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "minecraft:lapis_block",
+  "result": {
+    "id": "allthebiomes:cooked_lapis"
+  },
+  "experience": 100000000000000000,
+  "cookingtime": 200
+}

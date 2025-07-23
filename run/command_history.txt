@@ -1,0 +1,41 @@
+/give @r minecraft:barrier
+/effect give Dev minecraft:night_vision infinite
+/effect give Dev minecraft:resistance infinite 99
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/give Dev minecraft:knowledge_book
+/give Dev minecraft:light
+/give Dev minecraft:light 64
+/give Dev minecraft:knowledge_book 64
+/gamemode survival
+/kill
+/gamemode creative
+/kill
+/effect give Dev minecraft:night_vision infinite
+/give Dev minecraft:knowledge_book
+/give Dev minecraft:light 64
+/effect give Dev minecraft:resistance infinite 99
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative Dev
+/gamemode creative
+/gamemode creative Dev
+/gamemode survival
+/gamemode creative
+/effect give Dev minecraft:speed infinite 99
+/gamemode survival
+/effect give Dev minecraft:speed infinite 3
+/effect clear Dev minecraft:speed
+/effect give Dev minecraft:haste infinite 10
+/gamemode creative
+/effect give Dev minecraft:night_vision infinite
+/effect give Dev minecraft:resistance infinite 99
+/gamemode survival
+/gamemode creative

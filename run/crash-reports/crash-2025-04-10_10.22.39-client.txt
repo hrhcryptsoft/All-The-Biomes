@@ -1,0 +1,307 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2025-04-10 10:22:39
+Description: Unexpected error
+
+net.minecraftforge.fml.ModLoadingException: All The Biomes (allthebiomes) encountered an error during the done event phase
+§7java.lang.ExceptionInInitializerError: null
+	at LAYER PLUGIN/net.minecraftforge.javafmlmod@1.21.4-54.1.0/net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:188) ~[javafmllanguage-1.21.4-54.1.0.jar:54.1.0]
+	at LAYER PLUGIN/net.minecraftforge.fmlcore@1.21.4-54.1.0/net.minecraftforge.fml.ModLoader.lambda$postEvent$15(ModLoader.java:373) ~[fmlcore-1.21.4-54.1.0.jar:1.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at LAYER PLUGIN/net.minecraftforge.fmlcore@1.21.4-54.1.0/net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:148) ~[fmlcore-1.21.4-54.1.0.jar:1.0]
+	at LAYER PLUGIN/net.minecraftforge.fmlcore@1.21.4-54.1.0/net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:373) ~[fmlcore-1.21.4-54.1.0.jar:1.0]
+	at TRANSFORMER/net.minecraftforge.forge@54.1.0/net.minecraftforge.common.ForgeHooks.onCreativeModeTabBuildContents(ForgeHooks.java:1059) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTab.buildContents(CreativeModeTab.java:131) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTabs.lambda$buildAllTabContents$48(CreativeModeTabs.java:1980) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTabs.buildAllTabContents(CreativeModeTabs.java:1980) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTabs.tryRebuildTabContents(CreativeModeTabs.java:1989) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.tryRebuildTabContents(CreativeModeInventoryScreen.java:151) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.<init>(CreativeModeInventoryScreen.java:126) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.inventory.InventoryScreen.init(InventoryScreen.java:53) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.Screen.init(Screen.java:315) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.setScreen(Minecraft.java:1093) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.handleKeybinds(Minecraft.java:1897) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.tick(Minecraft.java:1756) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.runTick(Minecraft.java:1205) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:836) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.1.0.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.1.0.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
+Caused by: java.lang.ExceptionInInitializerError
+	at TRANSFORMER/allthebiomes@1.0.0/net.haydenji.allthebiomes.AllTheBiomes.addCreative(AllTheBiomes.java:57) ~[main/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:256) ~[eventbus-6.2.27.jar:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.lambda$addListener$3(EventBus.java:249) ~[eventbus-6.2.27.jar:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-6.2.27.jar:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.post(EventBus.java:288) ~[eventbus-6.2.27.jar:?]
+	at LAYER PLUGIN/net.minecraftforge.javafmlmod@1.21.4-54.1.0/net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:184) ~[javafmllanguage-1.21.4-54.1.0.jar:54.1.0]
+	... 44 more
+Caused by: java.lang.IllegalStateException: Cannot register new entries to DeferredRegister after RegisterEvent has been fired.
+	at TRANSFORMER/net.minecraftforge.forge@54.1.0/net.minecraftforge.registries.DeferredRegister.register(DeferredRegister.java:183) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/allthebiomes@1.0.0/net.haydenji.allthebiomes.block.ModBlocks.registerBlockItem(ModBlocks.java:38) ~[main/:?]
+	at TRANSFORMER/allthebiomes@1.0.0/net.haydenji.allthebiomes.block.ModBlocks.registerBlock(ModBlocks.java:34) ~[main/:?]
+	at TRANSFORMER/allthebiomes@1.0.0/net.haydenji.allthebiomes.block.ModBlocks.<clinit>(ModBlocks.java:24) ~[main/:?]
+	at TRANSFORMER/allthebiomes@1.0.0/net.haydenji.allthebiomes.AllTheBiomes.addCreative(AllTheBiomes.java:57) ~[main/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:256) ~[eventbus-6.2.27.jar:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.lambda$addListener$3(EventBus.java:249) ~[eventbus-6.2.27.jar:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-6.2.27.jar:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.post(EventBus.java:288) ~[eventbus-6.2.27.jar:?]
+	at LAYER PLUGIN/net.minecraftforge.javafmlmod@1.21.4-54.1.0/net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:184) ~[javafmllanguage-1.21.4-54.1.0.jar:54.1.0]
+	... 44 more
+Transformer Audit:
+  net.haydenji.allthebiomes.AllTheBiomes
+    REASON: classloading
+  net.haydenji.allthebiomes.block.ModBlocks
+    REASON: classloading
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: runtimedistcleaner:AFTER
+  net.minecraft.client.gui.screens.Screen
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: runtimedistcleaner:AFTER
+  net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen
+    REASON: classloading
+  net.minecraft.client.gui.screens.inventory.InventoryScreen
+    REASON: classloading
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.world.item.CreativeModeTab
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.item.CreativeModeTabs
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraftforge.common.ForgeHooks
+    REASON: classloading
+  net.minecraftforge.registries.DeferredRegister
+    REASON: classloading
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mod: 
+	All The Biomes (allthebiomes), Version: 1.0.0
+		at TRANSFORMER/allthebiomes@1.0.0/net.haydenji.allthebiomes.AllTheBiomes.addCreative(AllTheBiomes.java:57)
+Stacktrace:
+	at LAYER PLUGIN/net.minecraftforge.javafmlmod@1.21.4-54.1.0/net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:188) ~[javafmllanguage-1.21.4-54.1.0.jar!/:54.1.0]
+	at LAYER PLUGIN/net.minecraftforge.fmlcore@1.21.4-54.1.0/net.minecraftforge.fml.ModLoader.lambda$postEvent$15(ModLoader.java:373) ~[fmlcore-1.21.4-54.1.0.jar!/:1.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at LAYER PLUGIN/net.minecraftforge.fmlcore@1.21.4-54.1.0/net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:148) ~[fmlcore-1.21.4-54.1.0.jar!/:1.0]
+	at LAYER PLUGIN/net.minecraftforge.fmlcore@1.21.4-54.1.0/net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:373) ~[fmlcore-1.21.4-54.1.0.jar!/:1.0]
+	at TRANSFORMER/net.minecraftforge.forge@54.1.0/net.minecraftforge.common.ForgeHooks.onCreativeModeTabBuildContents(ForgeHooks.java:1059) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%231!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTab.buildContents(CreativeModeTab.java:131) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTabs.lambda$buildAllTabContents$48(CreativeModeTabs.java:1980) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTabs.buildAllTabContents(CreativeModeTabs.java:1980) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.CreativeModeTabs.tryRebuildTabContents(CreativeModeTabs.java:1989) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.tryRebuildTabContents(CreativeModeInventoryScreen.java:151) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.<init>(CreativeModeInventoryScreen.java:126) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.inventory.InventoryScreen.init(InventoryScreen.java:53) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.gui.screens.Screen.init(Screen.java:315) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.setScreen(Minecraft.java:1093) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.handleKeybinds(Minecraft.java:1897) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar%230!/:?]
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: runtimedistcleaner:AFTER
+  net.minecraft.client.gui.screens.Screen
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: runtimedistcleaner:AFTER
+  net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen
+    REASON: classloading
+  net.minecraft.client.gui.screens.inventory.InventoryScreen
+    REASON: classloading
+  net.minecraft.world.item.CreativeModeTab
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.item.CreativeModeTabs
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraftforge.common.ForgeHooks
+    REASON: classloading
+-- Uptime --
+Details:
+	JVM uptime: 34.408s
+	Wall uptime: 24.258s
+	High-res time: 31.913s
+	Client ticks: 396 ticks / 19.800s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2270) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:900) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:859) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.1.0_mapped_parchment_2025.02.16-1.21.4-recomp.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.1.0.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.1.0.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: runtimedistcleaner:AFTER
+  net.minecraft.client.main.Main
+    REASON: classloading
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['Dev'/72, l='ClientLevel', x=1.34, y=64.00, z=-43.34]]
+	Chunk stats: 961, 637
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (32,75,-64), Section: (at 0,11,0 in 2,4,-4; chunk contains blocks 32,-64,-64 to 47,319,-49), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Level time: 12455 game time, 12455 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 186
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.4
+	Minecraft Version ID: 1.21.4
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.6, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 538642720 bytes (513 MiB) / 1228931072 bytes (1172 MiB) up to 8531214336 bytes (8136 MiB)
+	CPUs: 24
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i9-12900K
+	Identifier: Intel64 Family 6 Model 151 Stepping 2
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 3.19
+	Number of physical packages: 1
+	Number of physical CPUs: 16
+	Number of logical CPUs: 24
+	Graphics card #0 name: Intel(R) UHD Graphics 770
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 2048.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.101.6129
+	Graphics card #1 name: NVIDIA GeForce RTX 3080
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 10240.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.6094
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 59033.61
+	Virtual memory used (MiB): 55468.81
+	Swap memory total (MiB): 26492.21
+	Swap memory used (MiB): 2983.94
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 487793.84, total: 953018.56
+	Space in storage for workdir (MiB): available: 487793.84, total: 953018.56
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: NVIDIA GeForce RTX 3080/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
+	Window size: 5120x1369
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 12/12 chunks
+	Resource Packs: vanilla, mod_resources
+	Current Language: en_us
+	Locale: en_AU
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 24x 12th Gen Intel(R) Core(TM) i9-12900K
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/72, l='ServerLevel[New World]', x=1.34, y=64.00, z=-43.34]]
+	Active Data Packs: vanilla, mod:forge, mod:allthebiomes (incompatible)
+	Available Data Packs: minecart_improvements, mod:allthebiomes (incompatible), mod:forge, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 576945555017172421
+	Suppressed Exceptions: ~~NONE~~
+	ModLauncher: 10.2.4
+	ModLauncher launch target: forge_userdev_client
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/ slf4jfixer PLUGINSERVICE 
+		/ runtimedistcleaner PLUGINSERVICE 
+		/ runtime_enum_extender PLUGINSERVICE 
+		/ object_holder_definalize PLUGINSERVICE 
+		/ capability_token_subclass PLUGINSERVICE 
+		/ accesstransformer PLUGINSERVICE 
+		/ mixin PLUGINSERVICE 
+		/ eventbus PLUGINSERVICE 
+		/ fml TRANSFORMATIONSERVICE 
+		/ mixin TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		lowcodefml@54
+		minecraft@1.0
+		javafml@54.1.0
+	Mod List: 
+		                                                  |Minecraft                     |minecraft                     |1.21.4              |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |54.1.0              |DONE      |Manifest: NOSIGNATURE
+		main                                              |All The Biomes                |allthebiomes                  |1.0.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 4d5f7bc9-2ec2-4dfe-85b5-53057fc982c8
+	FML: 0.0
+	Forge: net.minecraftforge:54.1.0

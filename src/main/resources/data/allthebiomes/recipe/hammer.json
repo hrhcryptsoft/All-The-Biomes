@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#K#",
+    "NDN",
+    "#L#"
+  ],
+  "key": {
+    "#": "minecraft:nether_star",
+    "K": "minecraft:knowledge_book",
+    "N": "minecraft:netherite_block",
+    "D": "minecraft:dragon_egg",
+    "L": "minecraft:light"
+  },
+  "result": {
+    "count": 1,
+    "id": "allthebiomes:hammer"
+}}
